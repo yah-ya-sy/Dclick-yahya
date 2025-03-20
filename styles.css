@@ -250,7 +250,7 @@ section#home .home-image {
     padding: 25px 20px;
     width: 280px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(239, 20, 20, 0.05);
 }
 
 .project p {
