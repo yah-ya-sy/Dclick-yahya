@@ -96,7 +96,7 @@ section#home .home-image {
 
 /* About Section */
 #about {
-    background-color: #f8f8fc;
+    background-color: #e7e3e3;
     padding: 60px 0;
 }
 
@@ -164,7 +164,7 @@ section#home .home-image {
 
 /* Skills Section */
 #skills {
-    background-color: #f8f8fc;
+    background-color: #e7e3e3;
     padding: 60px 0;
     text-align: center;
 }
@@ -226,7 +226,7 @@ section#home .home-image {
 
 /* Projects Section */
 #projects {
-    background-color: #f8f8fc;
+    background-color: #ffffff;
     padding: 60px 20px;
     text-align: center;
 }
@@ -246,7 +246,7 @@ section#home .home-image {
 }
 
 .project {
-    background-color: #ffffff;
+    background-color: #e7e3e3;
     padding: 25px 20px;
     width: 280px;
     border-radius: 10px;
