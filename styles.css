@@ -1,0 +1,478 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 20px;
+} 
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-left: 40px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+header nav ul li a.active {
+    color: #00D1D1;
+}
+
+section#home {
+    padding: 10px ;
+    background-color: #fff;
+}
+
+section#home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+section#home .text {
+    max-width: 600px;
+}
+
+section#home h2 {
+    font-size: 39px;
+    margin-bottom: 20px;
+}
+
+section#home p {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section#home .btn {
+    display: inline-block;
+    padding: 12px 25px; /* Plus de taille intérieure */
+    background-color: #00D1D1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px; /* Coins plus doux */
+    font-size: 18px; /* Texte plus lisible */
+    font-weight: bold; /* Texte en gras */
+    transition: background-color 0.3s ease;
+}
+
+
+section#home .home-image {
+    max-width: 35%;
+    height: auto;
+}
+
+footer {
+    background-color: #f3f3f6; /* couleur de fond comme sur l'image */
+    padding: 20px 0;
+    font-size: 11px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #00d1d1; /* couleur turquoise comme dans ton design */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.highlight {
+    color: #00D1D1;
+    font-weight: bold;
+}
+
+#about {
+    background-color: #f8f8fc;
+    padding: 60px 0;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+#about .text {
+    flex: 1;
+    max-width: 600px;
+}
+
+#about .text h2 {
+    color: #00CFCF;
+    font-size: 35px;
+    margin-bottom: 70px;
+    text-align: right;
+    width: 100%;
+    display: block;
+}
+
+#about .text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#about .text p span,
+#about .text p strong,
+#about .text a {
+    color: #00CFCF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#about .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #00CFCF;
+    color: white; /* Texte blanc */
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    transition: none; /* Pas d'effet au survol */
+}
+
+#about .btn:hover {
+    background-color: #00baba;
+    color: white; /* Le texte reste blanc même au hover */
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #00CFCF;
+    margin-left: 30px;
+}
+/* Section Compétences */
+#skills {
+    background-color: #f8f8fc;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 44px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #000;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills-box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: 400px;
+    max-width: 90%;
+}
+
+.skills-box h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill-name {
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    height: 100%;
+    background-color: #00CFCF; /* turquoise */
+    border-radius: 4px;
+}
+/* SECTION PROJETS */
+#projects {
+    background-color: #f8f8fc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #00D1D1;
+    margin-bottom: 70px;
+}
+
+/* WRAPPER FLEX */
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* CARTE PROJET */
+.project {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project p {
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.project .tags {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* BOUTON VOIR */
+.project .btn {
+    background-color: #00D1D1;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.project .btn:hover {
+    background-color: #00b6b6;
+}
+/* SECTION CONTACT */
+#contact {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+#contact h2 .big-text {
+    font-size: 40px;
+    color: white;
+    display: block;
+}
+
+#contact h2 .small-text {
+    font-size: 34px;
+    color: white;
+    display: block;
+    margin-top: 0;
+}
+
+#contact h2 .highlight {
+    color: #00D1D1;
+}
+
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    resize: none;
+}
+
+form textarea {
+    height: 180px;
+}
+
+form button {
+    background-color: #00D1D1;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #00b3b3;
+}
+
+/* Pour avoir deux inputs sur la même ligne */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row input {
+    flex: 1;
+}
+/* SECTION INTERESTS */
+#interests {
+    padding: 80px 20px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+#interests h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+}
+
+/* Grille pour disposer les cartes horizontalement */
+.interests-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Style des cartes */
+.interest-card {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 255, 255, 0.2);
+}
+
+.interest-card h3 {
+    font-size: 20px;
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.interest-card p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+
+/* Adaptation mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    .content, .accueil {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .accueil img {
+      max-width: 80%;
+      height: auto;
+      margin: 20px auto;
+    }
+  
+    .btn {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
