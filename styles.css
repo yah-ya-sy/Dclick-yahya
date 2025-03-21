@@ -531,11 +531,20 @@ html {
 }
 
 
+
+
+
 /* pour le mobile  Responsive - Mobile */
-@media (max-width: 768px) {
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; /* assure l’alignement horizontal */
+  }
+@media (max-width: 0) {
 
     header .container {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start;
     }
   
@@ -546,7 +555,7 @@ html {
     }
   
     header nav ul li {
-      margin: 10px 0;
+      margin: 10px 10;
     }
   
     section#home .container {
@@ -588,4 +597,3 @@ html {
       flex-direction: column;
     }
   }
-  
