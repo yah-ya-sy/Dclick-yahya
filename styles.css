@@ -1,5 +1,5 @@
  /* Global Styles */
-body {
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -530,70 +530,60 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-
-
-/* pour le mobile  Responsive - Mobile */
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row; /* assure l’alignement horizontal */
-  }
-@media (max-width: 0) {
-
-    header .container {
+/* ✅ Ajout de la classe .highlight-name */
+/* --------- RESPONSIVE FIXE - Garde la NAV horizontale partout --------- */
+@media (max-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: nowrap;
+    }
+  
+    nav .logo {
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+  
+    nav ul {
+      display: flex;
       flex-direction: row;
-      align-items: flex-start;
-    }
-  
-    header nav ul {
-      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
       padding: 0;
-      margin-top: 10px;
     }
   
-    header nav ul li {
-      margin: 10px 10;
+    nav ul li {
+      margin: 0;
+      white-space: nowrap;
     }
   
-    section#home .container {
-      flex-direction: column;
-      text-align: center;
-      gap: 30px;
+    nav ul li a {
+      font-size: 0.8rem;
+      padding: 5px;
     }
   
-    section#home .home-image {
-      max-width: 80%;
-      margin-top: 20px;
-    }
-  
-    #about .container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    #about .text h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    #about img {
-      margin: 20px 0 0 0;
-    }
-  
-    .skills-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .projects-wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .form-row {
-      flex-direction: column;
+    body {
+      overflow-x: auto;
     }
   }
+  
+  @media (max-width: 480px) {
+    nav {
+      padding: 8px 10px;
+    }
+  
+    nav .logo {
+      font-size: 1rem;
+    }
+  
+    nav ul li a {
+      font-size: 0.75rem;
+      padding: 4px;
+    }
+  }
+  
