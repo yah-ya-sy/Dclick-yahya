@@ -529,3 +529,63 @@ footer a:hover {
 html {
     scroll-behavior: smooth;
 }
+
+
+/* pour le mobile  Responsive - Mobile */
+@media (max-width: 768px) {
+
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      padding: 0;
+      margin-top: 10px;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    section#home .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    section#home .home-image {
+      max-width: 80%;
+      margin-top: 20px;
+    }
+  
+    #about .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #about .text h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    #about img {
+      margin: 20px 0 0 0;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  
