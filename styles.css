@@ -150,6 +150,7 @@ section#home .home-image {
 
 #about .text h2 {
     color: #00CFCF;
+    padding-top: 70px;
     font-size: 35px;
     margin-bottom: 70px;
     text-align: right;
@@ -338,6 +339,7 @@ section#home .home-image {
 }
 
 
+
 /* Contact Section */
 #contact {
     background-color: #111;
@@ -415,53 +417,6 @@ form button:hover {
     flex: 1;
 }
 
-/* Interests Section */
-#interests {
-    padding: 80px 20px;
-    background-color: #f3f3f3;
-    text-align: center;
-}
-
-#interests h2 {
-    font-size: 42px;
-    margin-bottom: 40px;
-    color: rgb(0, 0, 0);
-}
-
-.interests-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.interest-card {
-    background-color: #1a1a1a;
-    color: white;
-    border-radius: 12px;
-    width: 250px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.interest-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 255, 255, 0.2);
-}
-
-.interest-card h3 {
-    font-size: 20px;
-    color: #00ffff;
-    margin-bottom: 10px;
-}
-
-.interest-card p {
-    font-size: 14px;
-    color: #ddd;
-    line-height: 1.5;
-}
-
 /* Footer */
 footer {
     background-color: #f3f3f6;
@@ -492,7 +447,7 @@ footer a:hover {
 .animated-name:hover {
     color: #00D1D1;
 }
-
+/* Responsive Styles */
 @media (max-width: 600px) {
     * {
       box-sizing: border-box;
@@ -508,11 +463,11 @@ footer a:hover {
   
     header {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 0.5rem 1rem;
-      background-color: rgb(0, 0, 0);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0.8rem;
+      background-color: black;
       position: fixed;
       top: 0;
       left: 0;
@@ -522,52 +477,55 @@ footer a:hover {
     }
   
     .logo {
-      font-size: 1.9rem;
+      font-size: 1.2rem;
       font-weight: bold;
-      margin-bottom: 8px;
       white-space: nowrap;
+      flex-shrink: 0;
     }
   
-
-
     header nav {
-      width: 100%;
-      overflow-x: auto; /* permet le scroll horizontal */
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
     }
   
     header nav ul {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      gap: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 4px;
       margin: 0;
       padding: 0;
       list-style: none;
-      white-space: nowrap; /* empêche le retour à la ligne */
+      flex-wrap: wrap;
     }
   
     header nav ul li {
-      padding: 5px 8px;
-      font-size: 14px;
+      padding: 4px 6px;
+      font-size: 12px;
       margin: 0;
-      flex-shrink: 0;
     }
   
     body {
-      padding-top: 90px;
+      padding-top: 70px;
     }
   
     section,
     .container,
     .projects-wrapper,
-    .skills-container,
+    .competence, /* Ajouté */
     .interests-grid,
     .footer-content {
-      padding: 0 15px;
+      padding: 0 10px;
       flex-direction: column;
       align-items: center;
       text-align: center;
       width: 100%;
+    }
+  
+    #home {
+      scroll-margin-top: 90px;
     }
   
     section#home .home-image,
@@ -577,51 +535,52 @@ footer a:hover {
       margin: 20px 0;
     }
   
+    #about h2.turquoise {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
     .project,
-    .skills-box,
+    .skill .box, /* Ajouté */
     .interest-card {
       width: 100%;
       margin-bottom: 15px;
     }
+    #skills h2 {
+        font-size: 2rem; 
+        text-align: center;
   
     footer {
-      padding: 10px 15px;
+      padding: 1rem 0.5rem;
+    }
+  
+    .footer-content p,
+    .footer-content a {
       font-size: 12px;
-      text-align: center;
     }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-      
-      form input[type="text"],
-      form input[type="email"],
-      form textarea {
-        padding: 10px 15px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 1rem;
-        width: 100%;
-        box-sizing: border-box;
-        transition: border-color 0.3s ease;
-      }
-      
-      form input[type="text"]:focus,
-      form input[type="email"]:focus,
-      form textarea:focus {
-        border-color: #40E0D0; /* turquoise au focus */
-        outline: none;
-      }
-      
   
-    .footer-content {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+    .contact-section input,
+    .contact-section textarea,
+    .contact-section button {
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
-  }
   
+    .contact-section {
+      padding: 1rem;
+    }
+  
+    .home-text h1 {
+      font-size: 1.5rem;
+    }
+  
+    .home-text p {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 0.5rem 1rem;
+    }
