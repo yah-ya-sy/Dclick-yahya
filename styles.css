@@ -3,6 +3,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 0px; 
     background-color: #f4f4f4;
 }
 
@@ -492,98 +493,105 @@ footer a:hover {
     color: #00D1D1;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
-
-    h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .content, .accueil {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .accueil img {
-        max-width: 80%;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .btn {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* ✅ Ajout de la classe .highlight-name */
-/* --------- RESPONSIVE FIXE - Garde la NAV horizontale partout --------- */
-@media (max-width: 768px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      flex-wrap: nowrap;
+@media (max-width: 600px) {
+    * {
+      box-sizing: border-box;
     }
   
-    nav .logo {
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0.5rem 1rem;
+      background-color: rgb(0, 0, 0);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .logo {
       font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
       white-space: nowrap;
     }
   
-    nav ul {
+    header nav {
+      width: 100%;
+      overflow-x: auto; /* permet le scroll horizontal */
+    }
+  
+    header nav ul {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      justify-content: flex-start;
       gap: 10px;
-      justify-content: flex-end;
-      align-items: center;
       margin: 0;
       padding: 0;
+      list-style: none;
+      white-space: nowrap; /* empêche le retour à la ligne */
     }
   
-    nav ul li {
+    header nav ul li {
+      padding: 5px 8px;
+      font-size: 14px;
       margin: 0;
-      white-space: nowrap;
-    }
-  
-    nav ul li a {
-      font-size: 0.8rem;
-      padding: 5px;
+      flex-shrink: 0;
     }
   
     body {
-      overflow-x: auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    nav {
-      padding: 8px 10px;
+      padding-top: 90px;
     }
   
-    nav .logo {
-      font-size: 1rem;
+    section,
+    .container,
+    .projects-wrapper,
+    .skills-container,
+    .interests-grid,
+    .footer-content {
+      padding: 0 15px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
     }
   
-    nav ul li a {
-      font-size: 0.75rem;
-      padding: 4px;
+    section#home .home-image,
+    #about img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+  
+    .project,
+    .skills-box,
+    .interest-card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    footer {
+      padding: 10px 15px;
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
   }
   
