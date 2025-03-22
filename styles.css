@@ -560,29 +560,18 @@ footer a:hover {
     .footer-content a {
       font-size: 12px;
     }
-  
-    .contact-section input,
-    .contact-section textarea,
-    .contact-section button {
-      width: 100%;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-  
-    .contact-section {
-      padding: 1rem;
-    }
-  
-    .home-text h1 {
-      font-size: 1.5rem;
-    }
-  
-    .home-text p {
-      font-size: 14px;
-    }
-  
-    .btn {
-      font-size: 14px;
-      padding: 0.5rem 1rem;
-    }
+    .contact-section input:nth-child(1),
+.contact-section input:nth-child(2) {
+  width: 48%;
 }
+
+/* Le parent doit permettre l'affichage côte à côte */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4%;
+  padding: 1rem;
+}
+
+    }   
