@@ -476,12 +476,12 @@ footer a:hover {
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     }
   
-    .logo {
-      font-size: 1.2rem;
-      font-weight: bold;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
+    h1 {
+        font-size: 2rem;
+      }
+      .logo {
+        font-size: 2rem; /* même taille que h1 */
+      }
   
     header nav {
       flex: 1;
@@ -527,7 +527,7 @@ footer a:hover {
     #home {
       scroll-margin-top: 90px;
     }
-  
+    
     section#home .home-image,
     #about img {
       max-width: 100%;
@@ -550,7 +550,8 @@ footer a:hover {
     #skills h2 {
         font-size: 2rem; 
         text-align: center;
-  
+    }
+    
     footer {
       padding: 1rem 0.5rem;
     }
@@ -584,3 +585,4 @@ footer a:hover {
       font-size: 14px;
       padding: 0.5rem 1rem;
     }
+}
