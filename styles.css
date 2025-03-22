@@ -382,7 +382,7 @@ form textarea {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 11px;
     background-color: #fff;
     color: #000;
 }
@@ -414,7 +414,7 @@ form button:hover {
 }
 
 .form-row input {
-    flex: 1;
+    flex: 1px;
 }
 
 /* Footer */
@@ -448,7 +448,7 @@ footer a:hover {
     color: #00D1D1;
 }
 /* Responsive Styles */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     * {
       box-sizing: border-box;
     }
@@ -560,18 +560,7 @@ footer a:hover {
     .footer-content a {
       font-size: 12px;
     }
-    .contact-section input:nth-child(1),
-.contact-section input:nth-child(2) {
-  width: 48%;
-}
+   
 
-/* Le parent doit permettre l'affichage côte à côte */
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 4%;
-  padding: 1rem;
-}
-
-    }   
+    }
+   
