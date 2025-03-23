@@ -28,7 +28,6 @@ button:hover{
     font-weight: 600;
 }
 
-
 header {
     background-color: #000000;
     color: #ffd700;
@@ -243,6 +242,7 @@ body {
     padding: 0px 70px;
     height: 78.6vh;
     margin-top: 130px;
+    margin-bottom: 100px;
 }
 
 .presentation_flex {
@@ -315,6 +315,7 @@ body {
     height: fit-content;
     grid-template-columns: 60% 40%;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .aPropos_grid_text {
@@ -347,6 +348,7 @@ body {
 /*projets*/
 #projets {
     padding: 70px;
+    margin-bottom: 140px;
 }
 
 #projets h2 {
