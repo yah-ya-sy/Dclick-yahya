@@ -1,162 +1,213 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Sy Yahya</title>
-    <link rel="icon" type="image/png" href="image.png">
+    <meta name="description" content="Portfolio de Yahya Mohamed SY, développeur web en devenir, Découvrez mes projets en HTML, CSS, Javascript et plusencore.">
+    <meta name="author" content="Yahya Mohamed SY">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Portfolio | Yahya Mohamed</title>
 </head>
+
 <body>
+    <!--menu-->
     <header>
-        <div class="container">
-            <h1><a href="index.html" class="logo"><span class="animated-name">Sy</span></a> <span style="color: #00D1D1;"> Yahya Mohamed</span></h1>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#home" >Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <h1><a href="#acceuil" class="sy">Sy  </a><span>Yahya Mohamed </span></h1>
+        <div class="icon_menu_respond">
+            <img id="closeMenu" onclick="menuDisppart();" src="icon/arrow.png" alt="">
+            <img id="openMenu" onclick="menuAppart();" src="icon/menu.png" alt="">
+
         </div>
+        <nav>
+            <ul>
+                <li id="elementA"><a href="#acceuil" class="active">Acceuil</a></li>
+                <li id="elementB"><a href="#aPropos">À propos</a></li>
+                <li id="elementC"><a href="#projets">Projets</a></li>
+                <li id="elementD"><a href="#competences">Compétences</a></li>
+                <li id="elementE"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <div class="text">
-                <h2>Bienvenue</h2>
-                <p>Je suis <span class="highlight-name">Yahya Mohamed Sy</span>, Développeur en devenir passionné par le web et le design !</p>
-                <a href="#projects" class="btn">Voir mes projets</a>
-            </div>
-            <img src="IMAGE.jpg" alt="Image de développement web" class="home-image">
-        </div>
-    </section>
+    <main>
+        <section class="presentation" id="acceuil">
+            <div class="presentation_flex">
+                <div class="present_grid">
+                    <div class="present_grid_text">
+                        <div class="present_grid_text_flex">
+                            <h2 data-aos="zoom-in">Je suis <span>Yahya Mohamed </span>, Développeur en devenir <br>
+                                passionné par le web et le design !</h2>
+                            <a href="#projets"><button data-aos="zoom-in">Voir mes projets</button></a>
+                        </div>
 
-    <script src="script.js"></script>
-
-
-    <section id="about">
-        <div class="container">
-            <div class="text">
-                <h2 class="turquoise">À propos</h2>
-                <p>
-                    Je m’appelle <strong class="turquoise">Yahya Mohamed Sy</strong>, passionné par la création de sites web modernes et interactifs.<br><br>
-                    Je suis actuellement étudiant(e) en <strong class="turquoise">développement web</strong>, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.<br><br>
-                    J’adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.
-                  </p>
-                  
-                  <a href="my resumer.pdf" class="btn-cv" download>Télécharger mon CV</a>
-                  
-            </div>
-            <img src="DSC_0336.JPG" alt="Photo de Yahya">
-        </div>
-    </section>
-
-
-    <section id="projects">
-        <div class="container">
-            <h2>Mes Projets</h2>
-            <div class="projects-wrapper">
-                <div class="project">
-                    <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
-                    <div class="tags">
-                        <span>#html, #css, #js</span>
                     </div>
-                    <a href="javascript:void(0);" class="btn">Voir</a>
-                </div>
-                <div class="project">
-                    <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
-                    <div class="tags">
-                        <span>#html, #css, #js</span>
+                    <div class="present_grid_img">
+                        <img data-aos="zoom-in" src="IMAGE.jpg" alt="">
                     </div>
-                    <a href="javascript:void(0);" class="btn">Voir</a>
-                </div>
-                <div class="project">
-                    <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
-                    <div class="tags">
-                        <span>#html, #css, #js</span>
-                    </div>
-                    <a href="javascript:void(0);" class="btn">Voir</a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="aPropos">
+            <h2 data-aos="zoom-in">À Propos</h2>
+            <div class="aPropos_grid">
+                <div class="aPropos_grid_text">
+                    <div>
+                        <p data-aos="zoom-in">Je m'appelle <span>Yahya Mohamed SY</span>, passionné par la <br> création de sites web
+                            modernes et interactifs <br><br>
+
+                            Je suis actuellement étudiant(e) en <span>développement web</span>,<br> et je cherche à
+                            améliorer mes compétences en JavaScript, HTML, et CSS. <br><br>
+
+
+                            J'adore transformer mes idées en projets concrets <br> et expérimenter avec les nouvelles
+                            technologies.</p>
+                            <div class="button_div_propos">
+                                <a href="my resumer.pdf" download="CV_Yahya_Mohamed_SY.pdf">
+                                    <button data-aos="zoom-in">Télécharger mon CV</button>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="aPropos_grid_img">
+                    <img data-aos="zoom-in" src="DSC_0336.JPG" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 data-aos="zoom-in">Mes Projets</h2>
+            <div class="projets_grid">
+                <div data-aos="zoom-in">
+                    <p>Développement d'un site vitrine moderne et responsive pour une entreprise locale.</p>
+                    <p class="martop">#html, #css, #responsive</p>
+                    <button>Voir</button>
+                </div>
+                <div data-aos="zoom-in">
+                    <p>Création d'un portfolio interactif avec des animations et un design épuré.</p>
+                    <p class="martop">#html, #css, #javascript</p>
+                    <button>Voir</button>
+                </div>
+                <div data-aos="zoom-in">
+                    <p>Développement d'une application web permettant la gestion de tâches en ligne.</p>
+                    <p class="martop">#html, #css, #javascript, #api</p>
+                    <button>Voir</button>
+                </div>
+            </div>
+        </section>
         
-    </section>
 
-</section>
+        <section id="competences">
+            <h2 data-aos="zoom-in">Mes Compétences</h2>
+            <div class="competences_grid">
+                <div class="competences_container" data-aos="zoom-in">
 
-<section id="skills">
-    <div class="container">
-        <h2>Mes Compétences</h2>
-        <div class="skills-container">
-            <div class="skills-box">
-                <h3>Soft Skills</h3>
-                <div class="skill">
-                    <div class="skill-name">Gestion de projet</div>
-                    <div class="skill-bar"><div style="width: 70%;"></div></div>
+                    <h3 >Soft Skills</h3>
+                    <div class="bar_skills">
+                        <p>Gestion de projet</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar1"></div>
+                        </div>
+
+                        <p class="marginT-10"> Résolution de problème</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar2"></div>
+                        </div>
+
+                        <p class="marginT-10">Adaptabilité</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar3"></div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="skill">
-                    <div class="skill-name">Résolution de problème</div>
-                    <div class="skill-bar"><div style="width: 60%;"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Adaptabilité</div>
-                    <div class="skill-bar"><div style="width: 80%;"></div></div>
+
+                <div class="competences_container" data-aos="zoom-in">
+                    <h3>Hard Skills</h3>
+                    <div class="bar_skills">
+                        <p class="marginT-10">HTML</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar4"></div>
+                        </div>
+
+                        <p class="marginT-10">CSS</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar5"></div>
+                        </div>
+                        <p class="marginT-10">Javascript</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar6"></div>
+                        </div>
+
+                        <p class="marginT-10">VS Code</p>
+                        <div class="bar_container">
+                            <div class="bar_shower bar7"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skills-box">
-                <h3>Hard Skills</h3>
-                <div class="skill">
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-bar"><div style="width: 90%;"></div></div>
+        </section>
+
+
+        <section id="contact">
+            <h2 data-aos="zoom-in">Vous avez <span>un projet en tête ?</span> </h2>
+            <h3 data-aos="zoom-in">N'hésitez pas à me <span>contacter</span></h3>
+          
+            <div class="contact_input_div" data-aos="zoom-in">
+              <div class="contact_input_grid">
+                <div>
+                  <label for="prenom">Votre prénom : </label>
+                  <input id="prenom" type="text" placeholder="Yahya Mohamed">
                 </div>
-                <div class="skill">
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-bar"><div style="width: 75%;"></div></div>
+                <div>
+                  <label for="nom">Votre nom : </label>
+                  <input id="nom" type="text" placeholder="SY">
                 </div>
-                <div class="skill">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar"><div style="width: 70%;"></div></div>
+              </div>
+          
+              <div class="contact_input_block">
+                <div>
+                  <label for="sujet">Votre sujet : </label>
+                  <input id="sujet" type="text" placeholder="Développement vitrine">
                 </div>
-                <div class="skill">
-                    <div class="skill-name">VS Code</div>
-                    <div class="skill-bar"><div style="width: 85%;"></div></div>
-                </div>
+          
+                <textarea
+                  id="message"
+                  placeholder="Écrivez votre texte"
+                ></textarea>
+              </div>
+          
+              <div class="button_div">
+                <button>Envoyez</button>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>
-                <span class="big-text">Vous avez un <span class="highlight">projet en tête</span> ?</span><br>
-                <span class="small-text">N'hésitez pas à me <span class="highlight">contacter</span></span>
-              </h2>
-              
-            <form>
-                <div class="form-row">
-                    <input type="text" name="prenom" placeholder="Votre prénom" required>
-                    <input type="text" name="nom" placeholder="Votre nom" required>
-
-                    
-                </div>
-                <input type="text" name="sujet" placeholder="Votre sujet" required>
-                <textarea name="message" placeholder="Écrivez votre message ici" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
+          </section>
+          
 
     <footer>
-        <div class="container footer-content">
-            <p>Designed by <a href="#">Yahya Mohamed Sy</a> with HTML CSS JS</p>
-            <p>Tous droits réservés - 2025</p>
+        <div class="footer_grid">
+            <div>
+                <p>Designed by <span>Yahya Mohamed SY</span> with HTML CSS JS</p>
+            </div>
+            <div>
+                <p>Tous droits réservés - 2025</p>
+            </div>
         </div>
     </footer>
-    
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
