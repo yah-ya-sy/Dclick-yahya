@@ -712,7 +712,7 @@ body {
     .competences_grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 30px;
+        grid-gap: 40px;
         margin-top: 30px;
         font-family: "Open Sans", sans-serif;
 
